@@ -74,33 +74,58 @@
   }
 
   header .logo{
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-family:'Aladin', sans-serif ;
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    transform: rotate(-6deg);
   }
- 
+
+  .logo:hover{
+    transform: scale(0.95); /* Scale down slightly on hover */
+    color:var(--darker-secondary-color);
+    cursor: pointer;
+  }
+
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     gap:1.3rem;
-    font-size: 1.3rem;
   }
 
   #language-switch{
     position:absolute;
     right:2rem;
+    border:none;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding:0.2rem 0.4rem;
+  }
+  #language-switch:hover{
+    background-color: var(--darker-secondary-color);
+    color:var(--darker-main-color);
+    cursor: pointer;
   }
 
   ul a {
     text-decoration: none;
     color:inherit;
     font-weight: 500;
+    font-size: 1.3rem;
   }
   ul a:hover{
     color:var(--darker-secondary-color);
     text-shadow: 1px var(--darker-secondary-color);
+    cursor:pointer;
   }
+
+  ul a:active{
+    color:var(--darker-secondary-color);
+    font-weight: bold;
+  }
+  
 
   /* CSS for mobile devices */
 @media screen and (max-width: 768px) {
@@ -108,6 +133,9 @@
       padding: 1rem;
       flex-direction: column;
       gap:0.5rem;
+    }
+    .logo{
+        font-size:2rem;
     }
     ul {
       gap: 1rem; 
