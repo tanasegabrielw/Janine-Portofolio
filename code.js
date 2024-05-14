@@ -1,1 +1,3 @@
-const switchLang=document.querySelector('#language-switch');
+// const switchLang=document.querySelector('#language-switch');
+
+// switchLang.addEventListener('click')
