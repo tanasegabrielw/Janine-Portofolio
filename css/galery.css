@@ -54,3 +54,12 @@ img {
     font-style: italic;
     color: var(--main-color);
 }
+
+a{
+    text-decoration: none;
+}
+.gallery-toggle{
+    color: var(--darker-secondary-color);
+    transform: rotate(15deg);
+    font-weight: bolder;
+}
