@@ -19,8 +19,8 @@
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        padding:0.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        padding:1rem;
     }
 }
 
@@ -29,8 +29,8 @@
   and (-webkit-min-device-pixel-ratio: 3) 
   and (orientation: landscape) {
     .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        padding:1rem;
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        padding:1.5rem;
     }
 }
 
