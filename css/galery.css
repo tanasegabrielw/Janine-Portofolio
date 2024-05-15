@@ -11,6 +11,27 @@
     padding:2rem;
     gap: 2.5rem;
     grid-auto-rows: auto;
+    justify-content: center;
+}
+/* Media query for iOS devices */
+@media only screen 
+  and (max-device-width: 414px) /* iPhone 12 and below width */
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding:0.5rem;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 896px) /* iPhone 12 Pro Max width */
+  and (-webkit-min-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding:1rem;
+    }
 }
 
 img {
