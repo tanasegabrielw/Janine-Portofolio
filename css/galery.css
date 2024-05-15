@@ -5,10 +5,6 @@
     --darker-secondary-color:#C9ADA7;
     --third-color:#9A8C98;
   }
-main{
-    background-color: var(--secondary-color);
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
