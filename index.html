@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="code.js" defer></script>
     <title>Janine Portofolio</title>
+    <style>
+    
+    </style>
 </head>
 <body>
     <header>
@@ -19,7 +22,30 @@
         </nav>
         <button class="language-switch"><a href="de_website/index-deutsch.html">DE</a></button>
     </header>
-<main></main>
+<main> 
+    <div class="grid-container" id="galleryImages">
+        <!-- Display the randomly selected image here -->
+    </div>
+</main>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+        const response = await fetch('en/galery.html');
+        const galleryHTML = await response.text();
+        const galleryDoc = new DOMParser().parseFromString(galleryHTML, 'text/html');
+        const imageContainers = galleryDoc.querySelectorAll('.image-container');
+        
+        // Randomly select an index
+        const randomIndex = Math.floor(Math.random() * imageContainers.length);
+        
+        // Get the randomly selected image container
+        const randomImageContainer = imageContainers[randomIndex];
 
+        // Clone the selected image container
+        const clonedContainer = randomImageContainer.cloneNode(true);
+
+        // Append the cloned container to the index.html page
+        document.getElementById('galleryImages').appendChild(clonedContainer);
+    });
+</script>
 </body>
 </html>
