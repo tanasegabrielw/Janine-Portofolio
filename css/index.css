@@ -1,0 +1,36 @@
+:root{
+    --main-color:#4A4E69;
+    --secondary-color:#F2E9E4;
+    --darker-main-color:#22223B;
+    --darker-secondary-color:#C9ADA7;
+    --third-color:#9A8C98;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    text-align: center;
+    font:inherit;
+}
+
+img {
+    display: block;
+    height:500px;
+    width: auto;
+    border-radius: 3px; 
+    box-shadow: 0 0 15px var(--darker-main-color);
+}
+
+@media screen and (max-width: 768px) {
+
+    main{
+        padding:0.5rem;
+    }
+    img{
+        height: 200px;
+    }
+
+}

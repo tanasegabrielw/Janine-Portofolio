@@ -5,7 +5,7 @@
     --darker-secondary-color:#C9ADA7;
     --third-color:#9A8C98;
   }
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     padding:2rem;

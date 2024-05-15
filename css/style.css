@@ -50,8 +50,8 @@
     --darker-secondary-color:#C9ADA7;
     --third-color:#9A8C98;
   }
-  main{
-    background-color: var(--secondary-color);
+body{
+  background-color: var(--secondary-color);
 }
   body{
     font-family: 'Archivo Narrow';
