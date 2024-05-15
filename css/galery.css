@@ -12,6 +12,19 @@
     padding: 2.5rem 5rem;
     grid-auto-rows: auto;
 }
+@media (min-width: 600px) {
+    .grid-container {
+        gap: 3rem;
+        padding: 2rem 4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        gap: 5rem;
+        padding: 2.5rem 5rem;
+    }
+}
 
 img {
     max-width: 100%;
