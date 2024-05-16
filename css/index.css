@@ -56,4 +56,5 @@ a{
         grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
         padding:1.5rem;
     }
+
 }

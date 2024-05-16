@@ -24,12 +24,19 @@
         
         <div class="image-container">
             <a data-fslightbox href="assets/galery_img/1Singularität.jpg">
-                <img src="assets/galery_img/1Singularität.jpg" alt="Singularität Painting">
-                <div class="title">Singularität</div></a>
+                <div class="image-caption-box">
+                <img src="assets/galery_img/1Singularität.jpg" alt="Singularity Painting">
+                <div class="caption">Singularity, oil on canvas, 2022</div>
+            </div>
+                <div class="title">Singularity</div></a>
             </div>
             <div class="image-container">
-                <a data-fslightbox href="assets/galery_img/2Sonne_und_Mond.JPG" ><img src="assets/galery_img/2Sonne_und_Mond.JPG" alt="Sonne und Mond Painting">
-                <div class="title">Sonne und Mond</div></a>
+                <a data-fslightbox href="assets/galery_img/2Sonne_und_Mond.JPG" >
+                    <div class="image-caption-box">
+                        <img src="assets/galery_img/2Sonne_und_Mond.JPG" alt="Sun and Moon Painting">
+                        <div class="caption">Sun and Moon, oil on paper, 2020</div>
+                    </div>
+                <div class="title">Sun and Moon</div></a>
             </div>
             <div class="image-container">
                 <a data-fslightbox href="assets/galery_img/3Wüste.JPG"> <img src="assets/galery_img/3Wüste.JPG" alt="Wüste Painting">
@@ -86,5 +93,21 @@
     </div>
 </main>
 <script src="fslightbox/fslightbox.js"></script>
+<script> 
+const containers = document.querySelectorAll('.image-caption-box');
+
+containers.forEach(container => {
+    const image = container.querySelector('img');
+    const caption = container.querySelector('.caption');
+
+    container.addEventListener('mouseenter', () => {
+        caption.style.opacity = '1';
+    });
+
+    container.addEventListener('mouseleave', () => {
+        caption.style.opacity = '0';
+    });
+});
+</script>
     </body>
 </html>
