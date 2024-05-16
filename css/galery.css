@@ -58,8 +58,3 @@ img {
 a{
     text-decoration: none;
 }
-.gallery-toggle{
-    color: var(--darker-secondary-color);
-    transform: rotate(15deg);
-    font-weight: bolder;
-}

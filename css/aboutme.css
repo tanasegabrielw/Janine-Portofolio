@@ -1,4 +1,42 @@
-main{
-    height: 100vh;
+body{
+    font-family: 'Archivo Narrow', sans-serif;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .grid-container{
+    width: 75ch;
+    display: grid;
+    gap:0.2rem;
+    grid-template-areas:
+    'box ...'
+    '... image' ;
+} 
+ .text-box{
+    grid-area:box;
+    line-height: 1.6;
+    }
+.image-box{
+    grid-area: image;
+} 
+img {
+    max-width: 100%;
+    height:auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+  }
 
+p{
+    margin-bottom: 0.5rem;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        'box'
+        'image';
+    }
+  }

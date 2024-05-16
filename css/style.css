@@ -131,7 +131,12 @@ body{
     color:var(--darker-secondary-color);
     font-weight: bold;
   }
-  
+  .current-page{
+    color: var(--darker-secondary-color);
+    transform: rotate(15deg);
+    font-weight: bolder;
+}
+
 
   /* CSS for mobile devices */
 @media screen and (max-width: 768px) {
