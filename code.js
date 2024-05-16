@@ -16,3 +16,4 @@
         // Append the cloned container to the index.html page
         document.getElementById('galleryImages').appendChild(clonedContainer);
     });
+
