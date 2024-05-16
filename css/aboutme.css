@@ -5,6 +5,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:1rem;
 }
  .grid-container{
     width: 75ch;

@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem; 
+    margin: 0 auto; 
+}
+form>*{
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"],
+textarea {
+    width: 100%; 
+}
+textarea{
+    resize: none;
+}
