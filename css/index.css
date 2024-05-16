@@ -24,6 +24,11 @@ img {
     box-shadow: 0 0 15px var(--darker-main-color);
 }
 
+a{
+    text-decoration: none;
+    color:var(--main-color);
+    font-style: italic;
+}
 @media screen and (max-width: 768px) {
 
     main{
