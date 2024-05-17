@@ -18,9 +18,11 @@ main{
 
 img {
     display: block;
-    height:500px;
-    width: auto;
-    border-radius: 3px; 
+    max-width:25rem;
+    max-height: 35rem;
+    height: auto;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px black;
     object-fit:scale-down;
 }
 
@@ -30,24 +32,7 @@ a{
     font-style: italic;
 }
 
-/* Media query for iOS devices */
-@media only screen 
-  and (max-device-width: 414px) /* iPhone 12 and below width */
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-  img{
-    height: 300px;
-  }
-    }
 
-@media only screen 
-  and (max-device-width: 896px) /* iPhone 12 Pro Max width */
-  and (-webkit-min-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-    img{
-        width: 350px;
-    }
-}
 .caption{
     display: none;
 }

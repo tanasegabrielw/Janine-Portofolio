@@ -4,41 +4,20 @@
     --darker-main-color:#22223B;
     --darker-secondary-color:#C9ADA7;
     --third-color:#9A8C98;
-  }
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding:3rem 10rem;
     gap: 2.5rem;
     grid-auto-rows: auto;
     justify-content: center;
 }
-/* Media query for iOS devices */
-@media only screen 
-  and (max-device-width: 414px) /* iPhone 12 and below width */
-  and (-webkit-min-device-pixel-ratio: 2) 
-  and (orientation: portrait) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        padding:1rem;
-    }
-}
-
-@media only screen 
-  and (max-device-width: 896px) /* iPhone 12 Pro Max width */
-  and (-webkit-min-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-        padding:1.5rem;
-    }
-}
 
 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
     border-radius: 5px;
+    box-shadow: 0 0 10px black;
 }
 
 .image-container {
