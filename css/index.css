@@ -39,7 +39,7 @@ a{
     height: 300px;
   }
     }
-    
+
 @media only screen 
   and (max-device-width: 896px) /* iPhone 12 Pro Max width */
   and (-webkit-min-device-pixel-ratio: 3) 
