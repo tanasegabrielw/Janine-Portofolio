@@ -15,3 +15,6 @@ textarea {
 textarea{
     resize: none;
 }
+main{
+    padding:1rem;
+}

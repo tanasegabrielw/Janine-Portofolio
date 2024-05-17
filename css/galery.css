@@ -14,7 +14,11 @@
     grid-auto-rows: auto;
     justify-content: center;
 }
-
+@media (max-width: 768px) {
+    .grid-container {
+        padding: 2rem; /* Adjusted padding for smaller screens */
+    }
+}
 img {
     border-radius: 5px;
     box-shadow: 0 0 10px black;
