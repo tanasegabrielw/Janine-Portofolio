@@ -21,7 +21,7 @@ img {
     height:500px;
     width: auto;
     border-radius: 3px; 
-    box-shadow: 0 0 15px var(--darker-main-color);
+    object-fit:scale-down;
 }
 
 a{
@@ -29,34 +29,24 @@ a{
     color:var(--main-color);
     font-style: italic;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    padding:2rem;
-    gap: 2.5rem;
-    grid-auto-rows: auto;
-    justify-content: center;
-}
+
 /* Media query for iOS devices */
 @media only screen 
   and (max-device-width: 414px) /* iPhone 12 and below width */
   and (-webkit-min-device-pixel-ratio: 2) 
   and (orientation: portrait) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        padding:1rem;
+  img{
+    height: 300px;
+  }
     }
-}
-
+    
 @media only screen 
   and (max-device-width: 896px) /* iPhone 12 Pro Max width */
   and (-webkit-min-device-pixel-ratio: 3) 
   and (orientation: landscape) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-        padding:1.5rem;
+    img{
+        width: 350px;
     }
-
 }
 .caption{
     display: none;
