@@ -20,12 +20,18 @@
         <button class="language-switch"><a href="/de/index-deutsch.html">DE</a></button>
     </header>
     <main>
-
         <form action="https://formsubmit.co/tanasegabrielw@gmail.com" method="POST">
             <legend>Contact me!</legend>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="your-email@email.com">
-            <textarea name='textarea' placeholder="What's on your mind?" rows="6"></textarea>
+            <div class="item">
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="McMuffin">
+            </div>
+            <div class="item">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="your-email@email.com">
+            </div>
+
+            <div class="item"><textarea name='textarea' placeholder="What's on your mind?" rows="6"></textarea></div>
             <button>Submit!</button>
         </form>
 
