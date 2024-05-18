@@ -1,43 +1,42 @@
 body{
     font-family: 'Archivo Narrow', sans-serif;
 }
+h1{
+    margin:0;
+    padding:0;
+}
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:1rem;
+    padding: 1rem;
 }
  .grid-container{
-    width: 75ch;
-    display: grid;
-    gap:0.2rem;
-    grid-template-areas:
-    'box ...'
-    '... image' ;
+    display: flex;
+    gap:2rem;
+    width: 50%;
 } 
  .text-box{
-    grid-area:box;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 2;
     }
-.image-box{
-    grid-area: image;
-} 
 img {
     max-width: 100%;
     height:auto;
     object-fit: cover;
     display: block;
     border-radius: 5px;
+    box-shadow: 0 0 5px black;
   }
 
 p{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .grid-container {
-      grid-template-areas:
-        'box'
-        'image';
+        width: 100%;
+        display: block;
+        gap:1rem;
     }
   }
