@@ -15,7 +15,6 @@ main{
     'box ...'
     '... image' ;
 } 
-
  .text-box{
     grid-area:box;
     line-height: 1.6;
