@@ -204,6 +204,15 @@ imageContainers.forEach(imageContainer =>{
         imageTitle.style.display='none';
     }
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const imageBoxes = document.querySelectorAll('.image-box');
+    imageBoxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.style.opacity = '1';
+            box.style.transform = 'translateY(0)';
+        }, index * 500); // Delay each image by 500ms
+    });
+});
 </script>
     </body>
 </html>

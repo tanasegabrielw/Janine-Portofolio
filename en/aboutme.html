@@ -43,4 +43,14 @@
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Wait for the text box animation to finish (assuming 1s duration)
+            setTimeout(function() {
+                // Add the animation class to the image box
+                document.querySelector('.image-box').classList.add('image-fade-in');
+            }, 1000); // 1000ms = 1s
+        });
+        </script>
+        
     </body>

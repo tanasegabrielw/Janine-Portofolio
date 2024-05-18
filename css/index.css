@@ -44,3 +44,15 @@ a{
     display: none;
 }
 
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.image-container {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.image-container:nth-child(1) {
+    animation-delay: 0s;
+}
