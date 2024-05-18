@@ -65,19 +65,18 @@ a{
     display: inline-block;
 }
 
-/* Define keyframes for fade-in and slide-up animation */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Animation for the image container */
+/* Animation for the container */
 .image-container {
     opacity: 0;
     animation: fadeInUp 1s forwards;
 }
 
-/* Staggered animation delays for each image container */
+/* animation delays for each container */
 .image-container:nth-child(1) {
     animation-delay: 0s;
 }
