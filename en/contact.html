@@ -24,17 +24,17 @@
             <legend>Contact me!</legend>
             <div class="item">
                 <label for="name">Your name:</label>
-                <input type="text" name="name" id="name" placeholder="McMuffin">
+                <input type="text" name="name" id="name" placeholder="McMuffin" minlength="3" maxlength="20" required>
             </div>
             <div class="item">
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder="your-email@email.com">
+                <input type="email" name="email" id="email" placeholder="your-email@email.com" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" size="30" required>
             </div>
 
-            <div class="item"><textarea name='textarea' placeholder="What's on your mind?" rows="6"></textarea></div>
+            <div class="item">
+                <label for="message">Your message:</label>
+                <textarea name='textarea' id="message" placeholder="What's on your mind?" rows="6" minlength="10" required></textarea></div>
             <button>Submit!</button>
         </form>
-
-
     </main>
     </body>
