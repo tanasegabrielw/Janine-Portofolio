@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -40,9 +40,11 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  /*
-
+  a{
+    text-decoration: none;
+  }
   /* PAGE STYLE */
+
   :root{
     --main-color:#4A4E69;
     --secondary-color:#F2E9E4;
@@ -52,39 +54,36 @@
   }
 body{
   background-color: var(--secondary-color);
+  font-size: 1rem;
 }
-  body{
-    font-family: 'Archivo Narrow';
-    font-size: 1rem;
-  }
-  header{
-    background-color:var(--main-color);
-    position:relative;
-    color:var(--secondary-color);
-    display: flex;
-    padding:1rem 6rem; 
-    gap:3rem;
+ 
+header{
+  background-color:var(--main-color);
+  position:relative;
+  color:var(--secondary-color);
+  padding:1rem 6rem; 
+  font-family: 'Open Sans',sans-serif;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:3rem;
   }
-  .logo a{
-    text-decoration: none;
-    color:inherit;
-  }
-  header .logo{
-    font-size: 2.6rem;
-    font-family:'Aladin', sans-serif ;
-    position: relative;
-    transition: transform 0.3s ease; /* Add transition for smooth animation */
-    transform: rotate(-6deg);
+.logo a{
+  color:inherit;
+}
+header .logo{
+  font-size: 2.6rem;
+  font-family:'Aladin', sans-serif ;
+  position: relative;
+  transition: transform 0.3s ease; 
+  transform: rotate(-6deg);
   }
 
-  .logo:hover{
-    transform: scale(0.95); /* Scale down slightly on hover */
-    color:var(--darker-secondary-color);
-    cursor: pointer;
+.logo:hover{
+  transform: scale(0.95); /* Scale down slightly on hover */
+  color:var(--darker-secondary-color);
+  cursor: pointer;
   }
 
   ul {
@@ -92,7 +91,7 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
-    gap:1.3rem;
+    gap:1.5rem;
   }
 
   .language-switch{
@@ -103,40 +102,36 @@ body{
     border-radius: 1rem;
     padding:0.2rem 0.4rem;
   }
+  
   .language-switch:hover{
     background-color: var(--darker-secondary-color);
     color:var(--darker-main-color);
     cursor: pointer;
   }
-  .language-switch a{
-    text-decoration: none;
-    color:inherit;
-  }
 
   li a {
-    text-decoration: none;
     color:inherit;
-    font-weight: 500;
-    font-size: 1.3rem;
-    transition: transform 0.3s ease;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-style: normal;
   }
+
   li a:hover{
     color:var(--darker-secondary-color);
     text-shadow: 1px var(--darker-secondary-color);
     cursor:pointer;
-    transform: scale(1.05);
+    text-shadow: 0 0 1px var(--darker-secondary-color);
   }
 
   li a:active{
     color:var(--darker-secondary-color);
     font-weight: bold;
   }
+
   .current-page{
     color: var(--darker-secondary-color);
-    transform: rotate(15deg);
-    font-weight: bolder;
+    font-weight: 700;
 }
-
 
   /* CSS for mobile devices */
 @media screen and (max-width: 768px) {
