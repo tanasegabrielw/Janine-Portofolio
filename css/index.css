@@ -15,7 +15,7 @@ main{
     text-align: center;
     font:inherit;
 }
-img {
+main img {
     display: block;
     max-width:100%;
     max-height: 35rem;
@@ -25,14 +25,12 @@ img {
     object-fit:scale-down;
 }
 
-a{
-    text-decoration: none;
+main a{
     color:var(--main-color);
     font-style: italic;
 }
 
-
-.caption{
+main .caption{
     display: none;
 }
 .mobile-caption {
@@ -40,7 +38,7 @@ a{
     margin-top:0.5rem;
 }
 
-.title{
+main .title{
     display: none;
 }
 
@@ -48,7 +46,7 @@ a{
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-.image-container {
+main .image-container {
     opacity: 0;
     animation: fadeInUp 1s forwards;
 }

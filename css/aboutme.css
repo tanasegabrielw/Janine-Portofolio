@@ -1,36 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 body{
     font-family: 'Archivo Narrow', sans-serif;
 }
 h1{
     margin:0;
     padding:0;
+    font-family: 'Kalam', Times, serif;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    
 }
  .grid-container{
     display: flex;
-    gap:2rem;
+    flex-wrap: wrap;
+    gap:1rem;
     width: 50%;
 } 
  .text-box{
-    font-size: 1.1rem;
     line-height: 2;
-    }
-img {
     max-width: 100%;
-    height:auto;
+    }
+main img {
+    height: auto;
+    width: 100%;
     object-fit: cover;
     display: block;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
   }
 
-p{
-    margin-bottom: 0.2rem;
+main p{
+    padding-bottom: 0.7rem;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
