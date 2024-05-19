@@ -152,4 +152,7 @@ header .logo{
       right:1rem;
       top:2rem;
     }
+    header li a{
+      font-size: 1.2rem;
+    }
   }
