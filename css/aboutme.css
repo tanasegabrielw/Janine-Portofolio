@@ -6,6 +6,8 @@ h1{
     margin:0;
     padding:0;
     font-family: 'Kalam', Times, serif;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 main{
     display: flex;
@@ -52,10 +54,18 @@ main p{
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Animation for the text box */
-.text-box {
+.text-box p {
     opacity: 0;
     animation: fadeIn 1s forwards;
+    animation-delay: 1s; /* Adjust delay as needed */
+}
+
+.text-box p:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.text-box p:nth-child(4) {
+    animation-delay: 2s;
 }
 
 /* Animation for the image box, initially hidden */
