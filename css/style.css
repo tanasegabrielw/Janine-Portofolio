@@ -153,10 +153,10 @@ header .current-page{
     gap: 1rem; 
   }
   ul a {
-    font-size: 1.2rem; 
+    font-size: 1rem; 
   }
   header li a{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   header .language-switch{
     top:2rem;
