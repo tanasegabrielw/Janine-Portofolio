@@ -31,10 +31,16 @@ main img {
 
 .title {
     color: var(--main-color);
-    font-family:Helvetica, sans-serif;
     font-size: 1.2rem;
-
+    font-style: italic;
 }
+
+.title,
+.caption,
+.mobile-caption{
+    font-family:Georgia, sans-serif;
+}
+
 .caption,
 .mobile-caption {
     position: absolute;
@@ -50,7 +56,7 @@ main img {
     transition: opacity 0.3s ease;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-family: sans-serif;
+    font-style: italic;
 }
 
 .image-caption-box

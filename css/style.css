@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -46,17 +48,18 @@
   /* PAGE STYLE */
 
 :root{
-  --main-color:#1d3557;
+  --main-color:rgb(71, 1, 5);
   --main-color-light:#457b9d;
-  --main-color-lighter:#a8dadc;
-  --main-color-lightest:#f1faee;
-  --accent-color:#e63946;
+  --main-color-lighter:#ffffff;
+  --main-color-lightest:#8bfd5e;
+  --accent-color:#ffe100;
+  --accent-color-2:#ffb657;
   --white:white;
-  --header-font:'Montserrat',sans-serif;
-  --body-font:'Inter',sans-serif;
+  --heading-font:'Platypi',sans-serif;
+
   }
 body{
-  background-color: var(--main-color-lightest);
+  background-color: var(--main-color-lighter);
   font-size: 1rem;
 }
 main{
@@ -70,7 +73,7 @@ header{
   position:relative;
   color:var(--main-color-lightest);
   padding:1rem 6rem; 
-  font-family: 'Roboto',sans-serif,Times;
+  font-family: var(--heading-font),sans-serif,Times;
     
   display: flex;
   justify-content: center;
@@ -78,7 +81,7 @@ header{
   gap:3rem;
 }
 header .logo a{
-  color:inherit;
+  color:var(--accent-color-2);
   padding:0.5rem;
 }
 header .logo{
@@ -105,24 +108,25 @@ header .language-switch{
   position:absolute;
   right:2rem;
   border:none;
-  background-color: var(--main-color-lightest);
+  background-color: var(--main-color-lighter);
   color:var(--main-color);
   border-radius: 1rem;
   padding:0.2rem 0.4rem;
-  font-family: 'Roboto',sans-serif;
+  font-family: var(--heading-font),sans-serif;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
 .language-switch:hover{
   background-color: var(--accent-color);
-  color:var(--main-color-lightest);
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
 }
 
 header li a {
   color:inherit;
-  font-weight: 500;
   font-size: 1.5rem;
   font-style: normal;
   padding:0.3rem;
@@ -131,12 +135,12 @@ header li a {
 li a:hover{
   color:var(--accent-color);
   cursor:pointer;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 header .current-page{
   color: var(--accent-color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
   /* CSS for mobile devices */
