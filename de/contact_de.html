@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="prefetch" href="../en/contact.html">
+    <title>Kontakt</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index_de.html">Janine Böhl</a></div>
+        <nav>
+            <ul>
+                <li><a  href="../gallery_de.html">Gallerie</a></li>
+                <li><a  href="about_me_de.html">Über mich</a></li>
+                <li><a class="current-page" href="contact_de.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="language-switch"><a href="../en/contact.html">en</a></button>
+    </header>
+    <main>
+        <form action="https://formsubmit.co/tanasegabrielw@gmail.com" method="POST">
+            <legend>Kontaktieren Sie mich!</legend>
+            <div class="item">
+                <label for="name">Ihr Name:</label>
+                <input type="text" name="name" id="name" placeholder="McMuffin" minlength="3" maxlength="20" required>
+            </div>
+            <div class="item">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="your-email@email.com" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" size="30" required>
+            </div>
+
+            <div class="item">
+                <label for="message">Ihre Nachricht:</label>
+                <textarea name='textarea' id="message" placeholder="What's on your mind?" rows="6" minlength="10" required></textarea></div>
+            <button>Absenden!</button>
+        </form>
+    </main>
+    </body>
