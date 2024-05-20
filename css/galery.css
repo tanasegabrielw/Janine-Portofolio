@@ -1,25 +1,18 @@
-:root{
-    --main-color:#4A4E69;
-    --secondary-color:#F2E9E4;
-    --darker-main-color:#22223B;
-    --darker-secondary-color:#C9ADA7;
-    --third-color:#9A8C98;
-}
 html {
     scroll-behavior: smooth;
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    padding:2rem 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2.5rem;
+    padding-left:2rem;
+    padding-right: 2rem;
     grid-auto-rows: auto;
     justify-content: center;
 }
 @media (max-width: 768px) {
     .grid-container {
         gap:1.5rem;
-        padding: 2rem; /* Adjusted padding for smaller screens */
     }
 }
 main img {
@@ -37,7 +30,7 @@ main img {
 }
 
 .title {
-    color: var(--darker-main-color);
+    color: var(--main-color);
     font-family:Helvetica, sans-serif;
     font-size: 1.2rem;
 
