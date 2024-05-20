@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aboutme.css">
+    <link rel="prefetch" href="../en/aboutme.html">
+    <title>Über mich</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index_de.html">Janine Böhl</a></div>
+        <nav>
+            <ul>
+                <li><a  href="../gallery_de.html">Gallerie</a></li>
+                <li><a class="current-page"  href="about_me_de.html">Über mich</a></li>
+                <li><a  href="contact_de.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="language-switch"><a href="../en/aboutme.html">en</a></button>
+    </header>
+<main>
+    <div class="grid-container">
+        <div class="text-box">
+            <h1>Über mich</h1>
+            <p>
+                Ich male in einem intuitiven Prozess. Mal ist es das reine Material, der Zufall, der den Anfang macht,
+                mal sind es Beobachtungen, die ich interpretiere.
+            </p>
+          <p>
+              
+              Oft erlebt ein Bild mehrere grundlegende Veränderungen, bevor es bei seiner endgültigen Form ankommt.
+              Ich verirre mich gerne, nur um einen unerwarteten Weg aus dem Wald zu finden.
+          </p>
+    <p>
+    
+    Geboren und aufgewachsen im Stuttgarter Raum, bin ich zum Studium der Ethnologie nach Heidelberg und Freiburg. Außerdem
+    habe ich Zeit in Indonesien und Rumänien verbracht.
+    </p>
+        </div>
+        <div class='image-box'>
+            <img src="../assets/about_me_pic2.jpeg" alt="Janine Picture">
+        </div>
+    </div>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            // Add the animation class to the image box
+            document.querySelector('.image-box').classList.add('image-fade-in');
+        }, 3000); // 1000ms = 1s
+    });
+    </script>
+    
+</body>
