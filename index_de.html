@@ -8,6 +8,14 @@
     <link rel="prefetch" href="index.html">
     <link rel="icon" href="/assets/favicon-32x32.png" type="image/png">
     <title>Janine Portfolio</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage; 
+            if (userLang.startsWith('de')) {
+                window.location.href = 'index_de.html';
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
