@@ -69,6 +69,7 @@ body{
   position: relative;
 }
 main{
+  flex:1;
   padding:2rem;
 }
 a{
@@ -80,7 +81,7 @@ header{
   color:var(--main-color-lightest);
   padding:1rem 6rem; 
   font-family: var(--heading-font),sans-serif,Times;
-    
+  box-shadow: 0 0 5px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,9 +151,12 @@ header .current-page{
 }
 
 footer{
-  position: absolute;
-  bottom:0;
-  right:1rem;
+  width: 100%;
+  box-shadow: 0 0 5px black;
+  background-color: var(--main-color);
+  color:var(--main-color-lightest);
+  padding:1rem;
+  text-align: center;
   font-size: 0.8rem;
   font-style: italic;
 }
