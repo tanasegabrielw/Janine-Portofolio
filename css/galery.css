@@ -5,13 +5,12 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2.5rem;
-    padding-left:2rem;
-    padding-right: 2rem;
     grid-auto-rows: auto;
     justify-content: center;
 }
 @media (max-width: 768px) {
     .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         gap:1.5rem;
     }
 }
